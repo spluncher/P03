@@ -10,12 +10,12 @@ public class CanvasOverlay : MonoBehaviour
     private RawImage image;
     public enum OverlayEffect
     {
-        Dark,
-        Gray,
-        Light,
-        CracksLight,
-        CracksDark,
-        Bubbles,
+        One,
+        Two,
+        Three,
+        Four,
+        Five,
+        Six,
         None
     }
 
@@ -30,22 +30,22 @@ public class CanvasOverlay : MonoBehaviour
         image.enabled = overlayEffect != OverlayEffect.None;
         switch (overlayEffect)
         {
-            case OverlayEffect.Dark:
+            case OverlayEffect.One:
                 image.texture = textures[0];
                 break;
-            case OverlayEffect.Gray:
+            case OverlayEffect.Two:
                 image.texture = textures[1];
                 break;
-            case OverlayEffect.Light:
+            case OverlayEffect.Three:
                 image.texture = textures[2];
                 break;
-            case OverlayEffect.CracksLight:
+            case OverlayEffect.Four:
                 image.texture = textures[3];
                 break;
-            case OverlayEffect.CracksDark:
+            case OverlayEffect.Five:
                 image.texture = textures[4];
                 break;
-            case OverlayEffect.Bubbles:
+            case OverlayEffect.Six:
                 image.texture = textures[5];
                 break;
             default:
